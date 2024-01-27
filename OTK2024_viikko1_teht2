@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Kokeilua {
+    public static void main(String[] args) {
+        // Testataan metodia erilaisilla syötteillä
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(1);
+        lista.add(2);
+        lista.add(-1);
+        lista.add(3);
+        lista.add(-4);
+        lista.add(-5);
+        lista.add(6);
+
+        lista.removeIf(number -> number < 0);
+        
+        System.out.println(lista);
+    }
+}
